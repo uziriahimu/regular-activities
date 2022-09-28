@@ -1,0 +1,50 @@
+[
+    {
+        "id": "63346215768f290f214b68bc",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3gG1LTqcWzgSyrSFffY1uBp7oH9hYahS-_hCz2jTF&s",
+        "age": 24,
+        "text": "Once you are exercising regularly, the hardest thing is to stop it.",
+        "name": "Robbie Hernandez",
+        "time": 25
+    },
+    {
+        "id": "63346215529184b171d5eebd",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2wdCuwZm9qv8sq2xlJzJ84NbJwa_h4mgCn01jG8AByM3JxAo-M9w9Q6y90JqdbOFaiaQ&usqp=CAU",
+        "age": 33,
+        "text": "If you don’t make time for exercise, you’ll probably have to make time for illness.",
+        "name": "Howell Murray",
+        "time": 20
+    },
+    {
+        "id": "633462159bb16b38bdb646d4",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExpHgPcls2_iW2dUQCkJC-iZZTeLJZh4zfKZCtaPevYlLqVSMBFTRNz3SnUREVrWUYDA&usqp=CAU",
+        "age": 35,
+        "text": "If you want something you’ve never had, you must be willing to do something you’ve never done.",
+        "name": "Andrews Mason",
+        "time": 30
+    },
+    {
+        "id": "63346215dbb3f336dc553d05",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYMh7Idkb__yZFdkDP-kpSx4mQCMS2evTKn_VS39JORIQyVZMWudVUQP3SEnUvsAiciO8&usqp=CAU",
+        "age": 40,
+        "text": "Success usually comes to those who are too busy to be looking for it.",
+        "name": "Alma Sullivan",
+        "time": 40
+    },
+    {
+        "id": "633462153eaaa6887bc2ca67",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCt5mkBfuSHf7omr9lcUIN50xYk8LJ0gZfCRtk4flVxZ6aiGs2CsNIyLtoR-5uVqtRvNA&usqp=CAU",
+        "age": 34,
+        "text": "The body achieves what the mind believes",
+        "name": "Kristi Stevens",
+        "time": 38
+    },
+    {
+        "id": "63346215dd193c36cb6b96b4",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-jUcGsv2uoYfzQFixKRUSxNxnhH1xHAqZnHnN17xeku86sGExyjUBz9M-3Y_4Fbydt_E&usqp=CAU",
+        "age": 25,
+        "text": "The best way to predict the future is to create it.",
+        "name": "Margie Guy",
+        "time": 32
+    }
+]

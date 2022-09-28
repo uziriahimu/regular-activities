@@ -14,7 +14,21 @@
 
 }
 
-.exercise-time {
+.time {
     background-color: rgb(197, 199, 200);
     padding: 20px;
+    border-radius: 10px;
+}
+
+.activity-btn {
+    background-color: indianred;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

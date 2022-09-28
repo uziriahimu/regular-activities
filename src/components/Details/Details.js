@@ -25,9 +25,11 @@ const Details = ({ details }) => {
             </div>
             <div>
                 <h3>Exercise Details </h3>
-                <h3 className='exercise-time'>Exercise Time</h3>
-                <h3>Break Time</h3>
+                <h3 className='time'>Exercise Time</h3>
+                <h3 className='time'>Break Time</h3>
+
             </div>
+            <button className='activity-btn'>Activity Completed</button>
         </div>
     );
 };

@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import './Details.css'
 
 const Details = ({ details }) => {
-    const values = [10, 20, 30, 40, 50];
-    const [breakTime, setBreakTime] = useState([]);
-    console.log(breakTime)
-
+    const [breaks, setBreaks] = useState(0);
+    const breakTime = localStorage.getItem('break')
+    const handleBreakTime = (e) => {
+        localStorage.setItem('break', e)
+        setBreaks(e);
+    }
 
     let totalTime = 0;
     for (const detail of details) {
@@ -13,9 +15,8 @@ const Details = ({ details }) => {
 
     }
 
-    const handleBreakTime = () => {
 
-    }
+
     return (
         <div className='details'>
             <div>
@@ -41,11 +42,11 @@ const Details = ({ details }) => {
             <div>
                 <h3>Add A Break</h3>
                 <div className='details-btn'>
-                    <button onClick={() => handleBreakTime()}>10s</button >
-                    <button onClick={handleBreakTime}>10s</button>
-                    <button onClick={handleBreakTime}>10s</button>
-                    <button onClick={handleBreakTime}>10s</button>
-                    <button onClick={handleBreakTime}>10s</button>
+                    <button onClick={() => handleBreakTime(10)}>10s</button>
+                    <button onClick={() => handleBreakTime(20)}>20s</button>
+                    <button onClick={() => handleBreakTime(30)}>30s</button>
+                    <button onClick={() => handleBreakTime(40)}>40s</button>
+                    <button onClick={() => handleBreakTime(50)}>50s</button>
                 </div>
             </div>
             <div>
@@ -56,13 +57,13 @@ const Details = ({ details }) => {
                 </div>
                 <div className='time'>
                     <h3 >Break Time</h3>
-                    <h3></h3>
+                    <h3>{breakTime}s</h3>
                 </div>
 
 
             </div>
             <button className='activity-btn'>Activity Completed</button>
-        </div>
+        </div >
     );
 };
 

@@ -10,6 +10,8 @@
 .info {
     display: flex;
     justify-content: space-evenly;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
 }
 
 .details-btn {

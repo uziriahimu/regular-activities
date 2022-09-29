@@ -7,6 +7,15 @@
 
 .title {
     margin-top: 200px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.icon {
+    font-size: 30px;
+    margin-right: 40px;
 }
 
 .card-container {

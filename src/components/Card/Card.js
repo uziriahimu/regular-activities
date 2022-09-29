@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
 import SingleCard from '../SingleCard/SingleCard';
@@ -14,7 +16,7 @@ const Card = () => {
     }, [])
     const handleAddToList = (card) => {
 
-        console.log(card);
+        // console.log(card);
         const newDetails = [...details, card];
         setDetails(newDetails)
     }
@@ -23,7 +25,13 @@ const Card = () => {
 
             <div className='container'>
                 <div>
-                    <h1 className='title'>Yoga activities</h1>
+                    <div className='title'>
+                        <div className='icon'>
+                            <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>
+                        </div>
+                        <div><h1 >Regular activities</h1></div>
+
+                    </div>
                     <div className='card-container'>
 
                         {

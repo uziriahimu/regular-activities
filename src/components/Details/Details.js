@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Details.css'
 
 const Details = ({ details }) => {
+    const values = [10, 20, 30, 40, 50];
     const [breakTime, setBreakTime] = useState([]);
+    console.log(breakTime)
 
 
     let totalTime = 0;
@@ -12,23 +14,34 @@ const Details = ({ details }) => {
     }
 
     const handleBreakTime = () => {
-        console.log('click')
+
     }
     return (
         <div className='details'>
             <div>
+                <img src="" alt="" />
                 <h2>Uziria Shahadat Himu</h2>
                 <p>Rajshahi</p>
                 <div className='info'>
-                    <p>height</p>
-                    <p>height</p>
-                    <p>height</p>
+                    <div>
+                        <h4>57kg</h4>
+                        <p>weight</p>
+                    </div>
+                    <div>
+                        <h4>5.3</h4>
+                        <p>height</p>
+                    </div>
+                    <div>
+                        <h4>23yrs</h4>
+                        <p>age</p>
+                    </div>
+
                 </div>
             </div>
             <div>
                 <h3>Add A Break</h3>
                 <div className='details-btn'>
-                    <button onClick={handleBreakTime}>10s</button >
+                    <button onClick={() => handleBreakTime()}>10s</button >
                     <button onClick={handleBreakTime}>10s</button>
                     <button onClick={handleBreakTime}>10s</button>
                     <button onClick={handleBreakTime}>10s</button>

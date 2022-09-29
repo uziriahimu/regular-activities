@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Details.css'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Details = ({ details }) => {
     const [breaks, setBreaks] = useState(0);
@@ -15,6 +16,8 @@ const Details = ({ details }) => {
 
     }
 
+
+    const notify = () => toast("Congratulation! Activities are complete.")
 
 
     return (
@@ -62,7 +65,8 @@ const Details = ({ details }) => {
 
 
             </div>
-            <button className='activity-btn'>Activity Completed</button>
+            <button className='activity-btn' onClick={notify}>Activity Completed</button>
+            <ToastContainer></ToastContainer>
         </div >
     );
 };

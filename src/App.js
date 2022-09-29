@@ -9,6 +9,7 @@ function App() {
 
     <div>
       <Card></Card>
+      <ToastContainer></ToastContainer>
     </div>
 
 

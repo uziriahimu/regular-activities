@@ -2,7 +2,7 @@ import React from 'react';
 import './SingleCard.css'
 
 const SingleCard = ({ card, handleAddToList }) => {
-    const { image, name, age, id, text, time } = card
+    const { image, name, age, text, time } = card
     return (
 
         <div className='cards'>

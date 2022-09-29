@@ -23,9 +23,8 @@ const Details = ({ details }) => {
     return (
         <div className='details'>
             <div>
-                <img src="" alt="" />
-                <h2>Uziria Shahadat Himu</h2>
-                <p>Rajshahi</p>
+                <h2>Uziria Himu</h2>
+                <p><small>Web learner</small></p>
                 <div className='info'>
                     <div>
                         <h4>57kg</h4>

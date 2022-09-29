@@ -13,11 +13,8 @@ const Card = () => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setCards(data))
-        // .then(data => console.log(data))
     }, [])
     const handleAddToList = (card) => {
-
-        // console.log(card);
         const newDetails = [...details, card];
         setDetails(newDetails)
     }

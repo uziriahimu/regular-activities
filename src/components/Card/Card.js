@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
 import SingleCard from '../SingleCard/SingleCard';
 import './Card.css'
+import Blog from '../Blog/Blog';
 
 const Card = () => {
     const [cards, setCards] = useState([]);
@@ -47,6 +48,7 @@ const Card = () => {
                     <Details details={details}></Details>
                 </div>
             </div>
+            <Blog></Blog>
         </div>
 
 

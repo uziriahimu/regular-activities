@@ -1,0 +1,9 @@
+.blog {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.blog p {
+    font-size: 20px;
+}

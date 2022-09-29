@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Details.css'
 
 const Details = ({ details }) => {
+    const [breakTime, setBreakTime] = useState([]);
+
+
+    let totalTime = 0;
+    for (const detail of details) {
+        totalTime = totalTime + detail.time;
+
+    }
+
+    const handleBreakTime = () => {
+        console.log('click')
+    }
     return (
         <div className='details'>
             <div>
@@ -16,17 +28,24 @@ const Details = ({ details }) => {
             <div>
                 <h3>Add A Break</h3>
                 <div className='details-btn'>
-                    <button>10s</button>
-                    <button>10s</button>
-                    <button>10s</button>
-                    <button>10s</button>
-                    <button>10s</button>
+                    <button onClick={handleBreakTime}>10s</button >
+                    <button onClick={handleBreakTime}>10s</button>
+                    <button onClick={handleBreakTime}>10s</button>
+                    <button onClick={handleBreakTime}>10s</button>
+                    <button onClick={handleBreakTime}>10s</button>
                 </div>
             </div>
             <div>
                 <h3>Exercise Details </h3>
-                <h3 className='time'>Exercise Time</h3>
-                <h3 className='time'>Break Time</h3>
+                <div className='time'>
+                    <h3>Exercise Time </h3>
+                    <h3> {totalTime}s</h3>
+                </div>
+                <div className='time'>
+                    <h3 >Break Time</h3>
+                    <h3></h3>
+                </div>
+
 
             </div>
             <button className='activity-btn'>Activity Completed</button>

@@ -1,6 +1,10 @@
 .details {
     background-color: white;
     padding: 10px;
+    padding-bottom: 50px;
+    position: sticky;
+    top: 0;
+
 }
 
 .info {
@@ -16,8 +20,12 @@
 
 .time {
     background-color: rgb(197, 199, 200);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
 }
 
 .activity-btn {
@@ -31,4 +39,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }

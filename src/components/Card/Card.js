@@ -12,6 +12,12 @@ const Card = () => {
             .then(data => setCards(data))
         // .then(data => console.log(data))
     }, [])
+    const handleAddToList = (card) => {
+
+        console.log(card);
+        const newDetails = [...details, card];
+        setDetails(newDetails)
+    }
     return (
         <div>
 
@@ -24,6 +30,7 @@ const Card = () => {
                             cards.map(card => <SingleCard
                                 key={card.id}
                                 card={card}
+                                handleAddToList={handleAddToList}
                             ></SingleCard>)
                         }
                     </div>

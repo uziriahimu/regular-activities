@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCard.css'
 
-const SingleCard = ({ card }) => {
+const SingleCard = ({ card, handleAddToList }) => {
     const { image, name, age, id, text, time } = card
     return (
 
@@ -11,7 +11,7 @@ const SingleCard = ({ card }) => {
             <p>{text}</p>
             <p>For Age :{age}</p>
             <p>Time required : {time}s</p>
-            <button className='card-btn'>Add to list</button>
+            <button onClick={() => handleAddToList(card)} className='card-btn'>Add to list</button>
         </div>
     );
 };
